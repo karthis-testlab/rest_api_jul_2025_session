@@ -1,0 +1,9 @@
+{
+	"name": "Karthikeyan",
+	"location": "Chennai",
+	"gender": "male",
+	"address": {
+		"street": "new cart street",
+		"landmark": "near to new bus stand"
+	}
+}

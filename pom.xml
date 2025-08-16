@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.rest.api.jul.2025.session</groupId>
 	<artifactId>rest_api_jul_2025_session</artifactId>
@@ -23,5 +23,38 @@
 			<version>7.11.0</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.13.1</version>
+		</dependency>
 	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jsonschema2pojo</groupId>
+				<artifactId>jsonschema2pojo-maven-plugin</artifactId>
+				<version>1.2.2</version>
+				<configuration>
+					<sourceType>json</sourceType>
+					<sourceDirectory>${basedir}/src/main/resources/servicenow</sourceDirectory>
+					<targetPackage>week4.day1.servicenow.pojos</targetPackage>
+					<outputDirectory>${basedir}/src/main/java</outputDirectory>
+					<annotationStyle>none</annotationStyle>
+					<includeHashcodeAndEquals>false</includeHashcodeAndEquals>
+					<includeToString>false</includeToString>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
 </project>

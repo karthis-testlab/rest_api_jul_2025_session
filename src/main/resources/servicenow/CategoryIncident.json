@@ -1,0 +1,25 @@
+{
+    "result": [
+        {
+            "sys_id": "1c832706732023002728660c4cf6a7b9",
+            "number": "INC0009002",
+            "short_description": "My computer is not detecting the headphone device",
+            "description": "My computer is not detecting the headphone device. It could be an issue with the USB port.",
+            "category": "Hardware"
+        },
+        {
+            "sys_id": "46e3e949a9fe19810069b824ba2c761a",
+            "number": "INC0000016",
+            "short_description": "Rain is leaking on main DNS Server",
+            "description": "Seeing puddles of water on the floor of the server room. We've put buckets out to collect the water until this is fixed.",
+            "category": "hardware"
+        },
+        {
+            "sys_id": "46f09e75a9fe198100f4ffd8d366d17b",
+            "number": "INC0000025",
+            "short_description": "Need to add more memory to laptop",
+            "description": "I have a project involving video editing to complete. I've installed the editing software and the memory in my laptop is insufficient to run it effectively.",
+            "category": "hardware"
+        }
+    ]
+}
