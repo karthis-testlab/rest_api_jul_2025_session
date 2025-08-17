@@ -40,7 +40,7 @@
 				<configuration>
 					<sourceType>json</sourceType>
 					<sourceDirectory>${basedir}/src/main/resources/servicenow</sourceDirectory>
-					<targetPackage>week4.day1.servicenow.pojos</targetPackage>
+					<targetPackage>week4.day2.servicenow.pojos</targetPackage>
 					<outputDirectory>${basedir}/src/main/java</outputDirectory>
 					<annotationStyle>none</annotationStyle>
 					<includeHashcodeAndEquals>false</includeHashcodeAndEquals>
