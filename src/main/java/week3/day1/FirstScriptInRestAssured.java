@@ -14,9 +14,10 @@ public class FirstScriptInRestAssured {
        */ 
 		
 		RestAssured.given()
-		           .baseUri("https://dev271917.service-now.com")
+		           .baseUri("https://dev214352.service-now.com")
 		           .basePath("/api/now/table")
-		           .auth().basic("admin", "ay*lPG$Va97D")
+		           .auth()		           
+		           .basic("admin", "dLS9Qgs=V!0n")
 		           .log().all()
 		           .when()
 		           .get("/incident")
