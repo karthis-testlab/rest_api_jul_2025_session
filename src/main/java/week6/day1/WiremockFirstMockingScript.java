@@ -18,7 +18,7 @@ public class WiremockFirstMockingScript {
 				                                            .withStatusMessage("OK")
 				                                            .withBody("Hi! Welcome to Wiremock HTTPs mocking.");
 	
-	
+	   // Stub Mapping
 	   WireMock.stubFor(requestMocking.willReturn(responseMocking));
 	}
 

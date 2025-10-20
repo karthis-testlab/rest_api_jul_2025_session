@@ -1,31 +1,24 @@
 
 package week4.day2.servicenow.pojos;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
 
 @Generated("jsonschema2pojo")
-public class OpenedBy {
+public class CategoryIncident {
 
-    private String link;
-    private String value;
+    private List<Result> result = new ArrayList<Result>();
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    public String getLink() {
-        return link;
+    public List<Result> getResult() {
+        return result;
     }
 
-    public void setLink(String link) {
-        this.link = link;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
+    public void setResult(List<Result> result) {
+        this.result = result;
     }
 
     public Map<String, Object> getAdditionalProperties() {
